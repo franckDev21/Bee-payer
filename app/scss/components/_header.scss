@@ -1,0 +1,59 @@
+.header{
+  position:  relative;
+
+  .top-bar {
+    > .container{
+      @include flex($j-c: flex-end);
+      height: 73px;
+    }
+  }
+
+  .nav{
+    > .container{
+      @include flex;
+      padding: 25px 0;
+    }
+  }
+
+  // Hamburger open styles
+
+  &.open{
+    .nav__menu{
+      > span:first-child{
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2){
+        opacity: 0;
+      }
+      > span:last-child{
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .payment{
+    background-color: $colour-black;
+    padding: 2rem 0;
+    margin-bottom: 5rem;
+    .container{
+      @include flex;
+      & > img{
+        height: auto;
+        width: 9%;
+        &.mtn{
+          border-radius: .4rem;
+        }
+        &.orange{
+          height: 7rem;
+          width: 13%;
+        }
+        &.visa,&.master{
+          height: auto;
+          width: 8%;
+          border-radius: .4rem;
+        }
+      }
+    }
+  }
+
+}

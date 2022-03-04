@@ -1,0 +1,40 @@
+// colors
+$colour-primary: #F0BB75;
+$colour-secondary: #001534;
+$colour-accent: #D6FFF5;
+$colour-white: #fff;
+$colour-black : #000000;
+$colour-invalid: #DB464B;
+$color-text-link : #565656;
+$colour-light: #787878;
+
+$linear-color-to : #D1903B;
+$linear-color-from : #FFD193;
+
+// font size
+$font-sm : 0.875rem ; // 14 px
+$font-md : 1.125rem; // 18px
+$size-container : 1440px;
+$padding-container : 200px;
+
+//font
+$font-principal : 'Roboto', sans-serif;
+$font-secondary : 'Poppins', sans-serif;
+$font-banner: 3.375rem;
+$font-banner-sm : 2.950rem;
+
+//
+$heading-shadow-size: .55rem;
+$layout-margin: 6rem;
+$grid-gutter: $layout-margin * .25;
+
+// size
+$w-logo : 2.1875rem;
+$w-top-bar : 2.28125rem;
+$padding-banner : 6.5625rem;
+
+// breakpoints
+  // 640px,1024px,1400px
+$breakpoints-up : (medium : 40rem,large : 63.9375rem,x-large : 87.5rem);
+  // 639px,1023px,710px,1399px
+$breakpoints-down : (small : 39.9375rem,pre-small:44.375rem,medium : 63.9375rem,large : 87.4375rem);

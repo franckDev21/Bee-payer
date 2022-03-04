@@ -1,0 +1,45 @@
+.logo{
+  background-color: transparent;
+  @include flex($d-type: inline-flex);
+  font-family: $font-secondary;
+  color: $colour-black;
+  opacity: .99;
+  &__b{
+    background-image: linear-gradient(90deg ,$linear-color-to ,$linear-color-from );
+    color: $colour-white;
+    height: $w-logo;
+    width: $w-logo;
+    border-radius: 50%;
+    @include flex($j-c: center);
+    margin-right: .4707rem;
+    font-size: 1.77rem;
+    font-weight: 600;
+    & > span{
+      opacity: .7;
+    }
+  }
+  &__name{
+    font-weight: 600;
+    :not(span:last-child){
+      margin-right: .2rem;
+    }
+    font-size: 1.4rem;
+    span{
+      font-weight: bold;
+      display: inline-block;
+      &::first-letter{
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &--dark{
+    > .logo__name{
+      color: $colour-light;
+    }
+    > .logo__b{
+      color: $colour-black;
+    }
+  }
+
+}

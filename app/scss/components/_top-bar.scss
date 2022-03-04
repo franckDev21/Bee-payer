@@ -1,0 +1,32 @@
+.top-bar{
+  background-color: $colour-black;
+  color: $colour-white;
+
+  ul{
+    @include flex;
+    & > :not(li:last-child){
+      margin-right: 2rem;
+    }
+  }
+
+  &__link{
+    text-align: center;
+    line-height: 36px;
+    color: $colour-white;
+    flex: none;
+    & > a{
+      font-size: $font-sm;
+    }
+    &--btn{
+      color: $colour-black;
+      background-color: $colour-primary;
+      text-align: center;
+      border-radius: 50px;
+      font-weight: 600;
+      a{
+        width: 144px;
+        height: 36px;
+      }
+    }
+  }
+}

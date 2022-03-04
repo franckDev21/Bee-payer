@@ -1,0 +1,69 @@
+.banner{
+
+  padding: $padding-banner 0;
+  background-image : linear-gradient(to right , #fffa ,rgb(255,255,255,0.77),transparent,transparent), url("../img/shutterstock.jpg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  // a 710px
+  @include breakpoint-down(pre-small){
+    grid-template-columns: repeat(1,1fr);
+    background-image : linear-gradient(to right , #fffa ,rgb(255,255,255,0.77),rgb(255,255,255,0.30),transparent), url("../img/shutterstock.jpg");
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    // a 710px
+    @include breakpoint-down(pre-small){
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+  .banner-card{
+    &__subTitle{
+      font-size: $font-md;
+      color: $colour-black;
+      font-weight: 500;
+      @include flex($d-type : inline-flex);
+      &::before{
+        content: '';
+        display: inline-block;
+        width: 2rem;
+        height: 1.6px;
+        background-color: $colour-black;
+        margin-right: 1rem;
+      }
+    }
+
+    &__title{
+      font-size: $font-banner;
+      font-weight: bold;
+      padding-top: 1rem;
+      padding-bottom: 1.5625rem;
+
+      // a 1023px
+      @include breakpoint-down(medium){
+        font-size: $font-banner-sm ;
+      }
+    }
+
+    &__desc{
+      // a 1023px
+      @include breakpoint-down(medium){
+        font-size: .9rem ;
+      }
+    }
+
+    &__btn{
+      margin-top: 2rem;
+      font-size: $font-sm;
+      padding: 0.75rem 2.125rem;
+      background-color: $colour-primary;
+      font-weight: 500;
+      opacity: .9;
+      border-radius: 1.3rem;
+    }
+  }
+}

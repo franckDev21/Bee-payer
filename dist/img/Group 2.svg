@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="233px" height="228px" viewBox="0 0 233 228" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <defs>
+        <filter x="-43.7%" y="-20.4%" width="188.5%" height="143.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="11" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="31.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cards" transform="translate(-203.000000, -1557.000000)" stroke="#FFFFFF" stroke-width="0.6">
+            <g id="iPhone_X-Copy-4" filter="url(#filter-1)" transform="translate(200.000000, 938.000000)">
+                <g id="~SCREEN-HERE~" transform="translate(15.775862, 15.733240)">
+                    <g id="Group-10" transform="translate(-4.000000, 7.000000)">
+                        <g id="Group-9" transform="translate(0.000000, 44.105626)">
+                            <g id="Group-2" transform="translate(96.354132, 657.983927)">
+                                <rect id="Rectangle" x="0.3" y="0.3" width="21.9126476" height="15.6020666" rx="2.88"></rect>
+                                <rect id="Rectangle-Copy-17" x="3.15284239" y="3.24583029" width="4.90191032" height="3.81874543" rx="1.44"></rect>
+                                <line x1="3.20944769" y1="12.8880075" x2="11.7679749" y2="12.8880075" id="Line" stroke-linecap="round"></line>
+                                <line x1="13.9076067" y1="12.8880075" x2="16.0472384" y2="12.8880075" id="Line-Copy" stroke-linecap="round"></line>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

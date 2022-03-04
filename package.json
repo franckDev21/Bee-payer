@@ -1,0 +1,13 @@
+{
+  "name": "bee-payer",
+  "version": "1.0.0",
+  "description": "maquette bee-payer",
+  "main": "app.js",
+  "scripts": {
+    "sass": "sass --watch ./app/scss/main.scss:./dist/css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "author": "FranckDev21",
+  "browserslist": "last 4 versions",
+  "license": "ISC"
+}

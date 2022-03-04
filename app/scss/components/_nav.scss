@@ -1,0 +1,47 @@
+.nav{
+  background-color: $colour-white;
+  color: $colour-white;
+  position: relative;
+  z-index: 10;
+
+  &__menu{ // mobile menu
+    cursor: pointer;
+    > span{
+      display: block;
+      width: 26px;
+      height: 4px;
+      background-color: $color-text-link;
+      &:not(:last-child){
+        margin-bottom: 3px;
+      }
+      transition: all .4s ease-in-out;
+      transform-origin: 3.5px 2px;
+      position: relative;
+      z-index: 10;
+    }
+  }
+
+  &__links{
+    color: $color-text-link;
+    a{
+      font-size: $font-sm;
+      font-weight: 400;
+      transition: color .3s ease-in-out;
+      &.active{
+        color: $colour-black;
+        font-weight: bold;
+      }
+      &:hover,&.active:hover{
+        color: $colour-primary;
+      }
+    }
+  }
+
+  &__link{
+    display: inline-block;
+    &:not(:first-child){
+      margin-left: 38px;
+    }
+  }
+
+}
